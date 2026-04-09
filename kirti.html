@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kirti Institute</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#facc15;
+}
+
+@media (max-width: 600px){
+    .topbar{
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}
+
+/* TOP BAR */
+.topbar{
+    background:#fde047;
+    display:flex;
+    justify-content:space-between;
+    padding:10px 20px;
+    font-weight:bold;
+}
+
+.topbar span{
+    color:#1e3a8a;
+}
+
+/* MARQUEE */
+.marquee{
+    background:red;
+    color:white;
+    padding:8px;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+/* MAIN TITLE */
+.title{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:40px 10px;
+}
+
+.title h1{
+    font-size:50px;
+    font-weight:900;
+}
+
+/* NAVBAR */
+.nav{
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 10px;
+    text-align: center;
+}
+
+/* LINKS */
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* HOVER COLOR */
+.nav a:hover{
+    color: gold;
+}
+
+/* UNDERLINE ANIMATION */
+.nav a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background: gold;
+    transition: 0.3s;
+}
+
+.nav a:hover::after{
+    width: 100%;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px){
+    .nav a{
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* COURSES SECTION */
+.section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.course-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    margin:15px;
+    width:250px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+}
+
+/* INFO SECTION SIMPLE */
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+    padding:40px 20px;
+}
+
+/* BOX */
+.info-box{
+    background:white;
+    padding:20px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:left;
+}
+
+/* HEADING */
+.info-box h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+/* LIST */
+.info-box ul{
+    padding-left:20px;
+}
+
+.info-box li{
+    margin:8px 0;
+    font-weight:500;
+}
+
+/* ADMISSION BOX */
+.admission-box{
+    margin-top:20px;
+}
+
+.step{
+    background:white;
+    margin:10px auto;
+    padding:12px;
+    width:300px;
+    border-radius:8px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    font-weight:bold;
+}
+
+/* BUTTON */
+.admission-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#1e3a8a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.admission-btn:hover{
+    background:gold;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* CALL BUTTON */
+.call-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:green;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    background:darkgreen;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+.footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <span>Mr. Sachin Pawar</span>
+   
+    <span>M. 9996963523</span>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee">
+<marquee>🙏 Welcome to Kirti Institute of Textile Designing – Admission Open Now! Limited Seats Available 🚀</marquee>
+</div>
+
+<!-- TITLE -->
+ <div id="home"></div>
+<div class="title">
+    <h1>KIRTI INSTITUTE OF TEXTILE DESIGNING</h1>
+</div>
+
+<div class="nav">
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+     <a href="#address">Address</a>
+</div>
+
+
+
+<!-- INFO -->
+<div class="info">
+
+    <div class="info-box">
+        <h2>Knowledge of Designing Software</h2>
+        <ul>
+            <li>Nedgraphics</li>
+            <li>Autotex</li>
+            <li>Photoshop</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Yarn & Textile Formulas</h2>
+        <ul>
+            <li>Knitting</li>
+            <li>Tufting</li>
+            <li>Printing</li>
+            <li>Dyeing</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- COURSES -->
+ <div class="section" id="courses"></div>
+<div class="section">
+<h2>Our Training Areas</h2>
+
+<div class="course-box">
+
+<div class="card">
+<img src="bedlinen.webp" onclick="openImage(this.src)">
+<h3>Bed Linen</h3>
+</div>
+
+<div class="card">
+<img src="cusion cover.jpg" onclick="openImage(this.src)">
+<h3>Cushion Cover</h3>
+</div>
+
+
+
+<div class="card">
+<img src="kitchen utility.jfif" onclick="openImage(this.src)">
+<h3>Kitchen Utility</h3>
+</div>
+
+<div class="card">
+<img src="table linen.webp" onclick="openImage(this.src)">
+<h3>Table Linen</h3>
+</div>
+
+<div class="card">
+<img src="fabrics.jfif" onclick="openImage(this.src)">
+<h3>Fabrics</h3>
+</div>
+
+<div class="card">
+<img src="bath linen.jpg" onclick="openImage(this.src)">
+<h3>Bath Linen</h3>
+</div>
+
+
+
+</div>
+
+
+
+<div class="section" id="about">
+<h2>About Us</h2>
+<p>Kirti Institute of Textile Designing is a highly reputed institute that provides quality training in textile designing and related skills. Established on 15 May 2018, the institute has been dedicated to helping students build a strong career in the textile industry. Here, students are trained with both practical knowledge and modern designing techniques, including the use of professional software. Over the years, Kirti Institute has successfully helped many students gain employment and become financially independent. With experienced guidance and a focus on real industry skills, the institute continues to shape a bright future for its students.</p>
+</div>
+
+<div class="section" id="admission">
+<h2>Admission Open</h2>
+
+
+
+<p style="max-width:700px; margin:auto; font-size:18px;">
+🚀 Limited Seats Available – Enroll Now & Build Your Career in Textile Designing
+</p>
+
+
+<!-- FORM -->
+<div style="margin-top:30px;">
+    <input type="text" placeholder="Enter Your Name" id="name" style="padding:10px; width:250px; margin:5px;">
+    <br>
+    <input type="text" placeholder="Enter Father's Name" id="father_name" style="padding:10px; width:250px; margin:5px;">
+    <br>
+    <input type="text" placeholder="Enter Address" id="address" style="padding:10px; width:250px; margin:5px;">
+    <br>
+    <input type="number" placeholder="Enter Mobile Number" id="phone" style="padding:10px; width:250px; margin:5px;">
+    <br>
+<button onclick="applyNow()" class="admission-btn">🚀 Apply Now</button>
+    
+</div>
+
+<br>
+
+
+
+</div>
+
+</div>
+
+<!--Payment-->
+
+<div class="section" id="payment">
+<h2>💳 Payment Details</h2>
+
+<p style="max-width:700px; margin:auto; font-size:18px;">
+"Please use the options below to pay your monthly fees 👇"
+</p>
+
+<!-- QR CODE -->
+<div style="margin-top:20px;">
+    <img src="kirti payment.jpeg" alt="QR Code" style="width:200px; border-radius:10px;">
+    <p><b>Scan & Pay via UPI</b></p>
+    <br>
+    <h2><font color="blue">(Pay ₹ 7000)</font></h2>
+</div>
+
+
+
+</div>
+
+<!--contact Us-->
+<div class="section" id="contact">
+<h2>Contact Us</h2>
+<a href="tel:9996963523" class="call-btn">📞 Call Now</a><br>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919996963523" target="_blank" class="call-btn">
+💬 Contact  on WhatsApp
+</a>
+
+</div>
+
+<div class="section" id="address">
+<h2>Address</h2>
+<p>📍 Near Rajat Hospital, Khanna road, Krishanpura, Panipat (Haryana)</p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 Kirti Institute of Textile Designing
+</div>
+
+<!-- IMAGE POPUP -->
+<div id="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
+
+<style>
+#popup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#popup img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}
+</style>
+
+<script>
+function openImage(src){
+    document.getElementById("popup").style.display="flex";
+    document.getElementById("popup-img").src = src;
+}
+
+function closeImage(){
+    document.getElementById("popup").style.display="none";
+}
+
+function applyNow(){
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+
+    if(name === "" || father_name === ""|| address === ""|| phone === ""){
+        alert("Please fill all details!");
+    } else {
+        alert("✅ आवेदन सफल! हम जल्द आपसे संपर्क करेंगे");
+    }
+}
+
+function applyNow(){
+
+    var name = document.getElementById("name").value;
+    var father = document.getElementById("father_name").value;
+    var address = document.getElementById("address").value;
+    var phone = document.getElementById("phone").value;
+
+    if(name === "" || father === "" || address === "" || phone === ""){
+        alert("Please fill all details!");
+    } else {
+
+        var message = "Hello Kirti Institute,%0A%0A"
+                    + "I want to take admission.%0A%0A"
+                    + "👤 Name: " + name + "%0A"
+                    + "👨 Father's Name: " + father + "%0A"
+                    + "🏠 Address: " + address + "%0A"
+                    + "📞 Mobile: " + phone + "%0A%0A"
+                    + "Please contact me.";
+
+        var whatsappURL = "https://wa.me/919996963523?text=" + message;
+
+        window.open(whatsappURL, "_blank");
+    }
+}
+</script>
+
+</body>
+</html>
